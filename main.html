@@ -13,7 +13,7 @@
             <nav class="flex items-center justify-around">
                 <img src="./assets/Group.png" alt="">
                 <div class=" text-center">
-                   <h1 class="text-3xl font-bold">$ 4500</h1>
+                   <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
                    <p class="border border-black px-2 py-2 rounded-md font-semibold mt-2">Available Balance</p>
                 </div>
                 <button  class="btn font-semibold "> <a href="./index.html">Logout</a> </button>
@@ -77,19 +77,19 @@
                                 <label class="label">
                                   <span class="label-text">Amount to Add</span>
                                 </label>
-                                <input type="number" placeholder="Add Amount to withdraw" class="input input-bordered bg-gray-200" required />
+                                <input id="amount" type="number" placeholder="Add Amount to withdraw" class="input input-bordered bg-gray-200" required />
                               </div>
                               <div class="form-control">
                                 <label class="label">
                                   <span class="label-text">Pin Number</span>
                                 </label>
-                                <input type="password" placeholder="Enter 4 digit pin number" class="input input-bordered bg-gray-200" required />
+                                <input id="pin" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered bg-gray-200" required />
                                 <label class="label">
                                   <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                               </div>
                               <div class="form-control mt-6">
-                                <button class="btn btn-primary">Add Money</button>
+                                <button id="add-money" class="btn btn-primary">Add Money</button>
                               </div>
                             </form>
                           </div>
@@ -99,5 +99,6 @@
             </section>
         </header>
     </section>
+    <script src="./script/addMoney.js"></script>
 </body>
 </html>
